@@ -1,0 +1,23 @@
+FEW THINGS TO BE DONE FOR MINING REWARDS : 
+
+1) Add a mining reward.
+
+2) A place to store the pending transactions.
+
+3) New method to mine the new block for the pending transactions.
+
+*** Reason of adding the pending transactions array :  ***
+--> A block is to mined every 10 minutes. So you have to create a space where all the transactions can be stored till they are mined. So, PENDING transactions array is the place !!
+
+*** FAXS ***
+In line number 65, the PENDING transactions are added directly, but in real life coins like BITCOIN adding all the pending transactionst to a BLOCK isn't possible.. cuz there are way too many pending transactions.
+&&&&
+The block size cannot execede one megabyte !
+SO.. 
+Miners get to choose which transactions they want to include and which not !!
+
+
+*** HOW BALANCE IS ACTUALLY CHECKED !! ***
+--> The transaction is just stored on the blockchain, and if you ask for your BALANCE... you have go through all the transactions that involve your address and calculate it that way !!
+
+
